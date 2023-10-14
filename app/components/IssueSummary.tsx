@@ -8,6 +8,7 @@ interface Props {
   inProgress: number;
   closed: number;
 }
+
 export default function IssueSummary({ open, inProgress, closed }: Props) {
   const containers: {
     label: string;
