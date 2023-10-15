@@ -40,7 +40,7 @@ export default async function IssueDetailPage({ params }: Props) {
           <Flex direction="column" gap="4">
             <AssigneeSelect issue={issue} />
             <EditIssueButton issueId={issue.id} />
-            <DeleteIssueButton issueId={issue.id} />
+            <DeleteIssueButton issueId={issue.id.toString()} />
           </Flex>
         </Box>
       )}
